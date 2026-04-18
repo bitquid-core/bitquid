@@ -38,6 +38,6 @@ rpc_api_keys = [
 # Allowed origins for cross-origin requests.
 # Empty = restrictive (localhost:3000 only).
 rpc_cors_origins = [
-    # "https://app.bitquid.fi",
+    # "https://app.bitquid.fi(=TEST_URL)",
     # "http://localhost:3000",
 ]
