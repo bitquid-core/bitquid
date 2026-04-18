@@ -187,17 +187,6 @@ Contracts have access to native DeFi operations via VM opcodes:
 | **Halving Interval** | ~63,115,200 blocks (~4 years at 2s blocks) |
 | **Block Time** | 2 seconds |
 
-## Web Wallet
-
-Open `wallet.html` in any modern browser. The wallet launches in a compact window and supports:
-
-- Key generation and encrypted local storage (AES-GCM + PBKDF2)
-- Send and receive BQF tokens
-- QR code address display
-- Transaction history
-- Configurable RPC endpoint and API key
-
-No server or dependencies required — everything runs in the browser.
 
 ## Security
 
@@ -260,4 +249,4 @@ The release profile uses `lto = "fat"`, single codegen unit, and symbol strippin
 
 ## License
 
-MIT OR Apache-2.0
+MIT
