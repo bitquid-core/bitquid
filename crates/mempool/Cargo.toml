@@ -1,0 +1,15 @@
+[package]
+name = "bitquid-mempool"
+description = "Transaction mempool for Bitquid-Fi sidechain"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+bitquid-core = { workspace = true }
+bitquid-crypto = { workspace = true }
+parking_lot = { workspace = true }
+tracing = { workspace = true }
+thiserror = { workspace = true }
+dashmap = { workspace = true }
+tokio = { workspace = true }
+hex = { workspace = true }

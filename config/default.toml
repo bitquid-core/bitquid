@@ -1,0 +1,43 @@
+# ═══════════════════════════════════════════════════════
+#  Bitquid-Fi Sidechain — Node Configuration
+# ═══════════════════════════════════════════════════════
+
+# Chain parameters
+chain_id = 1337
+block_time_ms = 2000
+block_gas_limit = 100_000_000
+
+# Maximum number of peers
+max_peers = 50
+
+# Bootstrap peers (address:port format)
+bootstrap_peers = [
+    # "192.168.1.10:30303",
+    # "node1.bitquid.fi:30303",
+]
+
+# Validator private key (hex-encoded, 32 bytes)
+# WARNING: For production, use a hardware security module or secure key management.
+# validator_key = "your_private_key_hex_here"
+
+# ── RPC Authentication ──────────────────────────────────
+# API keys for bearer-token auth (constant-time comparison).
+# Clients send: Authorization: Bearer <key>
+# Leave empty to disable auth (dev mode only!).
+rpc_api_keys = [
+    # "my-secret-api-key-1",
+    # "my-secret-api-key-2",
+]
+
+# HMAC-SHA256 secret for JWT verification.
+# If set, clients can also authenticate with a signed JWT.
+# Generate tokens with: bitquid jwt --secret <this_value> --expiry 86400
+# rpc_jwt_secret = "change-me-to-a-random-secret"
+
+# ── CORS ────────────────────────────────────────────────
+# Allowed origins for cross-origin requests.
+# Empty = restrictive (localhost:3000 only).
+rpc_cors_origins = [
+    # "https://app.bitquid.fi",
+    # "http://localhost:3000",
+]

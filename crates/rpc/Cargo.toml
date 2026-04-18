@@ -1,0 +1,24 @@
+[package]
+name = "bitquid-rpc"
+description = "JSON-RPC API server for Bitquid-Fi sidechain"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+bitquid-core = { workspace = true }
+bitquid-crypto = { workspace = true }
+bitquid-storage = { workspace = true }
+bitquid-mempool = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+axum = { workspace = true }
+tower = { workspace = true }
+tower-http = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+thiserror = { workspace = true }
+hex = { workspace = true }
+bincode = { workspace = true }
+hmac = { workspace = true }
+sha2 = { workspace = true }
+base64 = "0.22"

@@ -1,0 +1,24 @@
+[package]
+name = "bitquid-network"
+description = "P2P networking layer for Bitquid-Fi sidechain"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+bitquid-core = { workspace = true }
+bitquid-crypto = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+bincode = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+thiserror = { workspace = true }
+bytes = { workspace = true }
+futures = { workspace = true }
+dashmap = { workspace = true }
+parking_lot = { workspace = true }
+async-trait = { workspace = true }
+rand = { workspace = true }
+blake3 = { workspace = true }
+ml-kem = { workspace = true }
+chacha20poly1305 = { workspace = true }

@@ -1,0 +1,29 @@
+[package]
+name = "bitquid-node"
+description = "Bitquid-Fi sidechain node"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "bitquid"
+path = "src/main.rs"
+
+[dependencies]
+bitquid-crypto = { workspace = true }
+bitquid-core = { workspace = true }
+bitquid-storage = { workspace = true }
+bitquid-mempool = { workspace = true }
+bitquid-consensus = { workspace = true }
+bitquid-network = { workspace = true }
+bitquid-rpc = { workspace = true }
+bitquid-runtime = { workspace = true }
+tokio = { workspace = true }
+clap = { workspace = true }
+serde = { workspace = true }
+toml = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
+hex = { workspace = true }
+serde_json = { workspace = true }
+bincode = { workspace = true }
